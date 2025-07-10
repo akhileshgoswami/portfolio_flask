@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="container py-5" id="contact" data-aos="fade-up">
+  <h2 class="section-title mb-5 text-center" style="color: var(--border-color); font-weight: 600;">Contact Me</h2>
+  
+  <div class="row justify-content-center gy-4">
+    <!-- Contact Info Card -->
+    <div class="col-lg-5 col-md-8" data-aos="fade-up" data-aos-delay="100">
+      <div class="p-4 rounded-4 shadow-sm h-100" style="background-color: var(--card-bg); color: var(--text-color);">
+        <ul class="list-unstyled fs-5 mb-0">
+          <li class="mb-4 d-flex align-items-start">
+            <i class="bi bi-envelope-fill me-3 fs-4 text-primary"></i>
+            <div>
+              <strong>Email:</strong><br />
+              <a href="mailto:akhileshgoswami1625@gmail.com" class="text-decoration-none link-hover">
+                akhileshgoswami1625@gmail.com
+              </a>
+            </div>
+          </li>
+          <li class="mb-4 d-flex align-items-start">
+            <i class="bi bi-telephone-fill me-3 fs-4 text-primary"></i>
+            <div>
+              <strong>Phone:</strong><br />
+              <span>+91-7379027002</span>
+            </div>
+          </li>
+          <li class="d-flex align-items-start">
+            <i class="bi bi-linkedin me-3 fs-4 text-primary"></i>
+            <div>
+              <strong>LinkedIn:</strong><br />
+              <a href="https://www.linkedin.com/in/er-akhilesh-goswami-54590319a/" target="_blank" class="text-decoration-none link-hover">
+                linkedin.com/in/akhileshgoswami
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col-lg-5 col-md-8" data-aos="fade-up" data-aos-delay="200">
+      <div class="p-4 rounded-4 shadow-sm h-100" style="background-color: var(--card-bg); color: var(--text-color);">
+        <h3 class="h5 mb-4 fw-semibold">Send Me a Message</h3>
+        <form action="mailto:akhileshgoswami1625@gmail.com" method="POST" enctype="text/plain" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control rounded-3" id="name" name="name" placeholder="Your Name" required />
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control rounded-3" id="email" name="email" placeholder="name@example.com" required />
+            <div class="invalid-feedback">Please enter a valid email.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control rounded-3" id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+            <div class="invalid-feedback">Please enter a message.</div>
+          </div>
+          <button type="submit" class="btn btn-outline-success w-100 py-2 rounded-3">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Optional: Form Validation -->
+<script>
+(function () {
+  'use strict';
+  const forms = document.querySelectorAll('.needs-validation');
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+})();
+</script>
+
+<style>
+/* Smooth hover link effect */
+.link-hover {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+.link-hover:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+</style>
+{% endblock %}

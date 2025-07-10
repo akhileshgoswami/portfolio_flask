@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero d-flex flex-column justify-content-center align-items-center text-center position-relative"
+  style="min-height: 60vh; overflow: hidden;" data-aos="fade-down">
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="
+        background: url('https://media.licdn.com/dms/image/v2/D5616AQH0lD4Y6K6ShQ/profile-displaybackgroundimage-shrink_350_1400/B56Zb8KKE7H4Ac-/0/1747987245075?e=1757548800&v=beta&t=WIBiOZx_n4OV6ACjAgT-JON0KkV2fh5yTlZWjBiYnJM') center center / cover no-repeat;
+        opacity: 0.1;
+        z-index: 1;
+      "></div>
+  <div class="position-relative" style="z-index: 2; padding: 2rem; color: var(--hero-text-color);">
+    <h1 class="display-4 fw-bold" data-translate="index_hero_greeting">
+      👋 Hi, I'm Akhilesh Goswami
+    </h1>
+    <p class="lead mt-3" data-translate="index_hero_desc">
+      Sr. Flutter Developer with 5+ years of experience delivering robust, scalable, and elegant mobile apps for iOS and
+      Android.
+    </p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="container py-5" id="about" data-aos="fade-up" style="color: var(--text-color);">
+  <h2 class="section-title mb-4" style="color: var(--border-color);" data-translate="index_about_title">
+    About Me
+  </h2>
+  <p class="fs-5 mb-3" data-translate="index_about_desc">
+    I'm a passionate <strong>Flutter Developer</strong> based in <strong>New Delhi</strong>, experienced in building
+    high-quality cross-platform apps using Flutter, Dart, Kotlin, Swift, and Firebase. I specialize in:
+  </p>
+  <ul class="fs-5 ps-3 mb-3">
+    <li>💼 State Management: GetX, BLoC, Provider</li>
+    <li>⚙️ CI/CD Automation & DevOps</li>
+    <li>🔐 App Security & Authentication</li>
+    <li>🌐 REST API Integration</li>
+    <li>🎨 Beautiful, Responsive UI/UX Design</li>
+  </ul>
+  <p class="fs-5" style="color: var(--highlight-color); font-weight: 600;">
+    🚀 I’ve developed and published <strong>80+ live mobile applications</strong> on the Play Store and App Store —
+    helping startups, agencies, and enterprises go mobile faster!
+  </p>
+  <p class="fs-5 fst-italic text-muted mt-4">
+    🔧 This portfolio website is built using <strong>Flask</strong> for the backend and templating.
+  </p>
+</section>
+
+
+<!-- Cool Projects Section -->
+<section class="container py-5" id="projects" data-aos="fade-up" style="color: var(--text-color);">
+  <h2 class="section-title mb-5 text-center fw-bold" style="color: var(--border-color);"
+    data-translate="index_projects_title">
+    🚀 Projects
+  </h2>
+  <div class="row g-4">
+
+   <!-- Project Card -->
+<div class="col-md-6 col-lg-4">
+  <div class="card border-0 shadow-lg rounded-4 backdrop-blur-sm project-card h-100"
+    data-aos="zoom-in"
+    style="background-color: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); transition: all 0.3s ease;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title fw-semibold mb-2" data-translate="index_project1_title"
+          style="transition: color 0.3s ease;">
+        🎯 aPerfect Guest App
+      </h5>
+      <p class="card-text flex-grow-1" data-translate="index_project1_desc">
+        Digital concierge app for TheSqua.re; improved guest experience by 35%. Includes smart services and location features.
+      </p>
+      <div>
+        <a href="https://play.google.com/store/apps/details?id=io.aperfectstay.aperfectstay_flutter_app"
+          class="btn btn-outline-success btn-sm me-2" target="_blank">
+          <i class="bi bi-android2"></i> Android
+        </a>
+        <a href="https://apps.apple.com/us/app/aperfect-guest-app/id6449526622"
+          class="btn btn-outline-primary btn-sm" target="_blank">
+          <i class="bi bi-apple"></i> iOS
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Card -->
+<div class="col-md-6 col-lg-4">
+  <div class="card border-0 shadow-lg rounded-4 backdrop-blur-sm project-card h-100"
+    data-aos="zoom-in" data-aos-delay="100"
+    style="background-color: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); transition: all 0.3s ease;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title fw-semibold mb-2" data-translate="index_project2_title"
+          style="transition: color 0.3s ease;">
+        🏢 aPerfect Office App
+      </h5>
+      <p class="card-text flex-grow-1" data-translate="index_project2_desc">
+        HRMS app for internal staff with offline/live attendance, shift tracking, and employee management.
+      </p>
+      <div>
+        <a href="https://play.google.com/store/apps/details?id=ai.aperfecstay.aperfectstay_teams"
+          class="btn btn-outline-success btn-sm me-2" target="_blank">
+          <i class="bi bi-android2"></i> Android
+        </a>
+        <a href="https://apps.apple.com/us/app/aperfect-office-app/id6449672743"
+          class="btn btn-outline-primary btn-sm" target="_blank">
+          <i class="bi bi-apple"></i> iOS
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   <!-- Project Card -->
+<div class="col-md-6 col-lg-4">
+  <div class="card border-0 shadow-lg rounded-4 backdrop-blur-sm project-card h-100"
+    data-aos="zoom-in" data-aos-delay="200"
+    style="background-color: var(--card-bg); color: var(--text-color); border: 1px solid var(--border-color); transition: all 0.3s ease;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title fw-semibold mb-2" data-translate="index_project3_title"
+          style="transition: color 0.3s ease;">
+        📦 Pal Fresh Sales App
+      </h5>
+      <p class="card-text flex-grow-1" data-translate="index_project3_desc">
+        Sales tracking and inventory management app for FMCG client; implemented background sync and performance optimization.
+      </p>
+      <div>
+        <a href="https://play.google.com/store/apps/details?id=com.palfresh.salesport.sales&hl=en_IN"
+          class="btn btn-outline-success btn-sm me-2" target="_blank">
+          <i class="bi bi-android2"></i> Android
+        </a>
+        <a href="https://apps.apple.com/app/pal-fresh-sales-app/id6502287932"
+          class="btn btn-outline-primary btn-sm" target="_blank">
+          <i class="bi bi-apple"></i> iOS
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<style>
+  .project-card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-card:hover {
+    background-color: var(--hover-bg, #1e1e1e);
+    color: var(--hover-text-color, #d9a20b);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .card-title {
+    transition: color 0.3s ease;
+  }
+
+  .project-card:hover .card-title {
+    color: var(--accent-color, #00d4ff);
+  }
+</style>
+
+<!-- Contact Section -->
+<section class="container py-5" id="contact" data-aos="fade-up" style="color: var(--text-color);">
+  <h2 class="section-title mb-4" style="color: var(--border-color);" data-translate="index_contact_title">Contact</h2>
+  <p class="fs-5" data-translate="index_contact_email">📧 Email: <a
+      href="mailto:akhileshgoswami1625@gmail.com">akhileshgoswami1625@gmail.com</a></p>
+  <p class="fs-5" data-translate="index_contact_linkedin">🔗 LinkedIn: <a
+      href="https://www.linkedin.com/in/er-akhilesh-goswami-54590319a/"
+      target="_blank">linkedin.com/in/er-akhilesh-goswami</a></p>
+  <p class="fs-5" data-translate="index_contact_github">🔗 GitHub: <a href="https://github.com/akhileshgoswami"
+      target="_blank">github.com/akhileshgoswami</a></p>
+</section>
+
+{% endblock %}

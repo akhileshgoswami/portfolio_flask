@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section style="padding: 3rem 1rem; background-color: #f2f2f2; font-family: 'Segoe UI', sans-serif;">
+  <div style="max-width: 960px; margin: auto; background-color: var(--card-bg); color: var(--text-color); border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.1); padding: 3rem;">
+
+    <!-- Header -->
+    <div style="text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem;">
+      <h1 data-translate="cv_name" style="font-weight: bold; color: var(--heading-color);">Akhilesh Goswami</h1>
+      <p data-translate="cv_role" style="margin-bottom: 0.25rem; font-size: 1.1rem; color: var(--subtext-color);">Sr. Flutter Developer</p>
+      <p data-translate="cv_location_contact" style="color: var(--subtext-color); font-size: 0.9rem;">
+        📍 New Delhi, India &nbsp; | &nbsp; 📞 +91-8009495398 &nbsp; | &nbsp; ✉️ akhileshgoswami1625@gmail.com
+      </p>
+      <p style="color: var(--subtext-color); font-size: 0.9rem;">
+        🔗 <a href="https://www.linkedin.com/in/er-akhilesh-goswami-54590319a/" style="color: #007bff;" target="_blank" data-translate="cv_linkedin">LinkedIn</a> |
+        <a href="https://github.com/akhileshgoswami" style="color: #007bff;" target="_blank" data-translate="cv_github">GitHub</a>
+      </p>
+      <a href="https://drive.google.com/file/d/1FrJZnTOtt91M6sr7_pYKiHFa00iSQ8jG/view?usp=sharing"
+         style="display: inline-block; margin-top: 10px; padding: 6px 14px; font-size: 0.9rem; border: 1px solid #007bff; color: #007bff; border-radius: 4px; text-decoration: none;"
+         target="_blank" data-translate="cv_download">📄 Download CV (PDF)</a>
+    </div>
+
+    <!-- Summary -->
+    <div style="margin-top: 2rem;">
+      <h3 data-translate="cv_summary_title" style="font-weight: 600; color: var(--heading-color);">Professional Summary</h3>
+      <p data-translate="cv_summary" style="color: var(--subtext-color);">
+        Passionate and performance-driven Flutter Developer with 5+ years of experience crafting scalable, maintainable, and delightful mobile applications.
+        Skilled in architecting full-stack Flutter apps, integrating RESTful APIs, and deploying to Play Store & App Store.
+        Known for delivering pixel-perfect UIs and leading high-performance dev teams using Agile methodologies.
+      </p>
+    </div>
+
+    <!-- Skills -->
+    <div style="margin-top: 2rem;">
+      <h3 data-translate="cv_skills_title" style="font-weight: 600; color: var(--heading-color);">Skills</h3>
+      <div style="display: flex; flex-wrap: wrap;">
+        <ul style="flex: 1; color: var(--subtext-color); padding-left: 1.2rem;">
+          <li data-translate="cv_skills_1">Flutter, Dart, Kotlin, Swift</li>
+          <li data-translate="cv_skills_2">Firebase, REST APIs, SQLite, Hive</li>
+          <li data-translate="cv_skills_3">Razorpay, Easebuzz, App Security</li>
+        </ul>
+        <ul style="flex: 1; color: var(--subtext-color); padding-left: 1.2rem;">
+          <li data-translate="cv_skills_4">GetX, BLoC, Provider, Clean Architecture</li>
+          <li data-translate="cv_skills_5">CI/CD: Fastlane, GitHub Actions, Bitrise</li>
+          <li data-translate="cv_skills_6">Version Control: Git, GitHub, Bitbucket</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div style="margin-top: 2rem;">
+      <h3 data-translate="cv_experience_title" style="font-weight: 600; color: var(--heading-color);">Professional Experience</h3>
+
+      <div style="margin-bottom: 1.5rem;">
+        <h4 data-translate="cv_exp1_title" style="margin-bottom: 0.25rem; color: #0056b3;">Sr. Flutter Developer – TheSqua.re, New Delhi</h4>
+        <p data-translate="cv_exp1_date" style="color: var(--subtext-color); font-size: 0.9rem;">Jul 2024 – Present</p>
+        <ul style="color: var(--subtext-color); padding-left: 1.2rem;">
+          <li data-translate="cv_exp1_1">Developed aPerfect Guest & Office Apps with offline-first architecture and location tracking.</li>
+          <li data-translate="cv_exp1_2">Reduced crash rates by 40% using Fastlane & GitHub Actions CI/CD pipelines.</li>
+          <li data-translate="cv_exp1_3">Mentored juniors and improved testing/code review standards.</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom: 1.5rem;">
+        <h4 data-translate="cv_exp2_title" style="margin-bottom: 0.25rem; color: #0056b3;">Sr. Flutter Developer – Sort String Solution Pvt. Ltd, Lucknow</h4>
+        <p data-translate="cv_exp2_date" style="color: var(--subtext-color); font-size: 0.9rem;">Jun 2022 – Jul 2024</p>
+        <ul style="color: var(--subtext-color); padding-left: 1.2rem;">
+          <li data-translate="cv_exp2_1">Delivered 20+ Flutter apps across healthcare, retail, dairy domains.</li>
+          <li data-translate="cv_exp2_2">Integrated payments, background services, and Fastlane CI/CD workflows.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 data-translate="cv_exp3_title" style="margin-bottom: 0.25rem; color: #0056b3;">Flutter Developer – Aara Technologies, Lucknow</h4>
+        <p data-translate="cv_exp3_date" style="color: var(--subtext-color); font-size: 0.9rem;">Jun 2021 – Jun 2022</p>
+        <ul style="color: var(--subtext-color); padding-left: 1.2rem;">
+          <li data-translate="cv_exp3_1">Built cross-platform apps with Firebase, REST APIs, and offline-first architecture.</li>
+          <li data-translate="cv_exp3_2">Optimized UI responsiveness and collaborated on wireframes, design, and testing.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div style="margin-top: 2rem;">
+      <h3 data-translate="cv_education_title" style="font-weight: 600; color: var(--heading-color);">Education</h3>
+      <ul style="color: var(--subtext-color); padding-left: 1.2rem;">
+        <li data-translate="cv_education_1"><strong>B.Tech</strong>, Computer Science – AKTU (2023)</li>
+        <li data-translate="cv_education_2"><strong>Diploma</strong>, Computer Science – MMIT Siddharthnagar (2020)</li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <div style="margin-top: 2rem;">
+      <h3 data-translate="cv_projects_title" style="font-weight: 600; color: var(--heading-color);">Featured Projects</h3>
+      <ul style="color: var(--subtext-color); padding-left: 1.2rem;">
+        <li data-translate="cv_project_1"><strong>aPerfect Guest App</strong> — 
+          <a href="https://apps.apple.com/us/app/aperfect-guest-app/id6449526622" target="_blank" style="color: #007bff;">iOS</a> | 
+          <a href="https://play.google.com/store/apps/details?id=io.aperfectstay.aperfectstay_flutter_app" target="_blank" style="color: #007bff;">Android</a>
+        </li>
+        <li data-translate="cv_project_2"><strong>aPerfect Office App</strong> — 
+          <a href="https://apps.apple.com/us/app/aperfect-office-app/id6449672743" target="_blank" style="color: #007bff;">iOS</a> | 
+          <a href="https://play.google.com/store/apps/details?id=ai.aperfecstay.aperfectstay_teams" target="_blank" style="color: #007bff;">Android</a>
+        </li>
+        <li data-translate="cv_project_3"><strong>Pal Fresh Sales App</strong> — 
+          <a href="https://apps.apple.com/app/pal-fresh-sales-app/id6502287932" target="_blank" style="color: #007bff;">iOS</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

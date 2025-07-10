@@ -1,0 +1,48 @@
+<!-- Updated about.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<section class="container py-5" id="about" data-aos="fade-up">
+  <h2 class="section-title mb-5 text-center" style="color: var(--border-color);" data-translate="about_title">
+    About Me
+  </h2>
+  <div class="row align-items-center gx-5 gy-4">
+    <!-- Profile Image -->
+    <div class="col-md-5 text-center" data-aos="zoom-in-right">
+      <div class="position-relative">
+        <img src="{{ url_for('static', filename='akhilesh.png') }}"   alt="Akhilesh Goswami"
+  class="img-fluid rounded-4 shadow-lg border border-3"
+  style="max-height: 400px; object-fit: cover;"
+  onerror="this.onerror=null; this.src='https://via.placeholder.com/400x400.png?text=No+Image';">
+
+      </div>
+    </div>
+
+ <!-- Text Content -->
+<div class="col-md-7" data-aos="fade-left">
+  <div class="p-4 rounded-4 shadow-sm" style="background-color: var(--card-bg); color: var(--text-color);">
+    <p class="fs-5 mb-3" data-translate="about_intro">
+      Hello! I'm <strong>Akhilesh Goswami</strong>, a passionate and performance-driven
+      <strong>Sr. Flutter Developer</strong> with over <strong>5 years of experience</strong>.
+    </p>
+    <p class="fs-5 mb-3" data-translate="about_specialty">
+      I specialize in creating pixel-perfect UIs and architecting robust app structures using:
+    </p>
+    <ul class="list-unstyled fs-5 mb-3 ps-2">
+      <li class="mb-2" data-translate="about_skill_1">💙 <strong>Flutter & Dart</strong> for native-quality mobile apps</li>
+      <li class="mb-2" data-translate="about_skill_2">📦 <strong>State Management:</strong> BLoC, GetX, Riverpod</li>
+      <li class="mb-2" data-translate="about_skill_3">🔌 <strong>API Integration:</strong> REST, GraphQL, Firebase</li>
+      <li class="mb-2" data-translate="about_skill_4">🧪 <strong>Testing:</strong> Unit, Integration, Mockito, CI/CD</li>
+      <li class="mb-2" data-translate="about_skill_5">🎯 <strong>Architecture:</strong> Clean Code, Modularization, DevOps</li>
+    </ul>
+    <p class="fs-5 mb-2" data-translate="about_mission">
+      I love building applications that are not only functional but also delightful to use.
+    </p>
+    <p class="fs-5 mb-0" data-translate="about_invite">
+      Let's build great mobile experiences together — faster, smarter, and beautifully.
+    </p>
+  </div>
+</div>
+  </div>
+</section>
+{% endblock %}
