@@ -2,7 +2,6 @@ import os
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
-from flask_sqlalchemy import SQLAlchemy
 from googletrans import Translator, LANGUAGES
 
 # --------------------
@@ -12,7 +11,7 @@ load_dotenv()  # Loads .env file
 
 ACCESS_SECRET = os.getenv("ACCESS_SECRET", "default_access_secret")
 REFRESH_SECRET = os.getenv("REFRESH_SECRET", "default_refresh_secret")
-DATABASE_URL = os.getenv("DATABASE_URL")
+
 
 # --------------------
 # Flask App Setup
@@ -20,12 +19,9 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 app = Flask(__name__)
 CORS(app)
 
-# Database config
-app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
 
 # Initialize extensions
-db = SQLAlchemy(app)
 translator = Translator()
 
 # --------------------
@@ -42,25 +38,7 @@ from auth import (
 # --------------------
 # Database Model
 # --------------------
-class User(db.Model):
-    __tablename__ = 'users'
 
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    age = db.Column(db.Integer, nullable=False)
-    mobile_number = db.Column(db.String(20), nullable=False)
-
-    def to_dict(self):
-        return {
-            "id": self.id,
-            "name": self.name,
-            "age": self.age,
-            "mobile_number": self.mobile_number
-        }
-
-# Create all tables
-with app.app_context():
-    db.create_all()
 
 # --------------------
 # Language Validity Check
@@ -73,8 +51,8 @@ def valid_lang(lang_code):
 # --------------------
 @app.route('/')
 def index():
-    users = User.query.all()
-    return render_template('index.html', languages=LANGUAGES, users=users)
+   
+    return render_template('index.html', languages=LANGUAGES,)
 
 @app.route('/about')
 def about():
