@@ -1,12 +1,15 @@
-runtime: python311  # Use 311 for Python 3.11.x
+runtime: python311
 
 entrypoint: gunicorn -b :$PORT app:app
 
-instance_class: F1  # Optional: can be F2, F4, etc. based on resources
+instance_class: F1  # lowest-cost instance, perfect for portfolio
+
+automatic_scaling:
+  max_instances: 2  # keep costs and scaling under control
 
 env_variables:
   FLASK_ENV: production
-  SECRET_KEY: 'your-secret-key'  # replace with actual secret if needed
+  SECRET_KEY: 'your-strong-secret-key'
 
 handlers:
   - url: /.*
