@@ -1,0 +1,13 @@
+runtime: python311  # Use 311 for Python 3.11.x
+
+entrypoint: gunicorn -b :$PORT app:app
+
+instance_class: F1  # Optional: can be F2, F4, etc. based on resources
+
+env_variables:
+  FLASK_ENV: production
+  SECRET_KEY: 'your-secret-key'  # replace with actual secret if needed
+
+handlers:
+  - url: /.*
+    script: auto
